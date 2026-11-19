@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="paper">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4f1ea" id="metaThemeColor" />
+  <title>Raditya Ega Dasilva — Portofolio Rekayasa Perangkat Lunak</title>
+  <meta name="description"
+    content="Portofolio resmi Raditya Ega Dasilva, pelajar Rekayasa Perangkat Lunak (RPL) di SMKN 6 Kota Tangerang Selatan. Fokus pada aplikasi desktop C#/.NET, MySQL, Web Frontend, dan arsitektur UI/UX." />
+  <link rel="preconnect" href ="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+  <!-- TOP EDITORIAL HEADER & NAVIGATION -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Beranda Raditya Ega Dasilva">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span class="brand-text">
+          <span class="brand-name">Raditya Ega</span>
+          <span class="brand-role">RPL · SMKN 6 Tangsel</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <ul class="nav-list" id="navList">
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#kurasi">Di Luar Kode</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Ganti tema tampilan"
+          title="Ganti mode kertas / tinta">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span class="theme-label" id="themeLabel">Mode Tinta</span>
+        </button>
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi"
+          aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MOBILE NAVIGATION PANEL -->
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="#tentang">01 — Tentang Saya</a></li>
+        <li><a href="#keahlian">02 — Keahlian &amp; Stack</a></li>
+        <li><a href="#proyek">03 — Studi Kasus Proyek</a></li>
+        <li><a href="#kurasi">04 — Di Luar Kode</a></li>
+        <li><a href="#kontak">05 — Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-meta-bar">
+          <span class="meta-chip">
+            <span class="live-indicator" aria-hidden="true"></span>
+            Tangerang Selatan, Indonesia · <span id="wibClock">00:00 WIB</span>
+          </span>
+          <span class="meta-mono">PORTOFOLIO TEKNIS · EDISI 2026</span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-primary">
+            <p class="eyebrow">Rekayasa Perangkat Lunak — SMKN 6 Kota Tangerang Selatan</p>
+            <h1 class="hero-title">
+              Merancang perangkat lunak yang <em class="serif-italic">terstruktur, fungsional,</em> dan nyaman digunakan.
+            </h1>
+            <p class="hero-lead">
+              Saya <strong>Raditya Ega Dasilva</strong> (biasa dipanggil <strong>Ega</strong>), pelajar jurusan
+              Rekayasa Perangkat Lunak (RPL) yang berfokus pada pengembangan aplikasi desktop berbasis <strong>C# (.NET
+                WinForms)</strong> dan <strong>MySQL</strong>, perancangan antarmuka web, serta eksplorasi solusi
+              berbasis Generative AI.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#proyek" class="btn btn-primary">
+                <span>Lihat Studi Kasus Proyek</span>
+                <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75"
+                  aria-hidden="true">
+                  <path d="M10 4v12m0 0l-4.5-4.5M10 16l4.5-4.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#tentang" class="btn btn-outline">Tentang &amp; Pendekatan</a>
+              <a href="https://github.com/ellarygail-studie" target="_blank" rel="noopener" class="btn btn-ghost">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- STRUCTURED PROFILE DOSSIER CARD -->
+          <aside class="dossier-card" aria-label="Ringkasan Profil">
+            <div class="dossier-header">
+              <div>
+                <span class="meta-mono">PROFIL SINGKAT</span>
+                <h2 class="dossier-name">Raditya Ega Dasilva</h2>
+              </div>
+              <span class="monogram-stamp" aria-hidden="true">R.E.D</span>
+            </div>
+
+            <dl class="dossier-list">
+              <div class="dossier-row">
+                <dt>Panggilan</dt>
+                <dd>Ega</dd>
+              </div>
+              <div class="dossier-row">
+                <dt>Sekolah &amp; Jurusan</dt>
+                <dd>SMKN 6 Tangsel · RPL</dd>
+              </div>
+              <div class="dossier-row">
+                <dt>Fokus Utama</dt>
+                <dd>Desktop App, Web UI &amp; Database</dd>
+              </div>
+              <div class="dossier-row">
+                <dt>Teknologi Inti</dt>
+                <dd>C# .NET, MySQL, HTML/CSS/JS</dd>
+              </div>
+              <div class="dossier-row">
+                <dt>Bahasa</dt>
+                <dd>Indonesia, English, Deutsch</dd>
+              </div>
+              <div class="dossier-row">
+                <dt>Repositori</dt>
+                <dd><a href="https://github.com/ellarygail-studie" target="_blank" rel="noopener">ellarygail-studie ↗</a>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="dossier-footer">
+              <span class="meta-mono">MORSE: . --. .-</span>
+              <span class="status-tag">Terbuka untuk Kolaborasi</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 01: TENTANG SAYA -->
+    <section id="tentang" class="section-block">
+      <div class="container">
+        <div class="section-layout">
+          <div class="section-aside reveal">
+            <span class="section-index">01 / TENTANG SAYA</span>
+            <h2 class="section-title">Latar Belakang &amp; Cara Saya Membangun</h2>
+            <p class="section-note">
+              Menggabungkan logika pemrograman terstruktur dengan kepekaan terhadap alur penggunaan nyata.
+            </p>
+
+            <div class="education-box">
+              <span class="meta-mono">PENDIDIKAN SAAT INI</span>
+              <h3>SMKN 6 Kota Tangerang Selatan</h3>
+              <p>Kompetensi Keahlian Rekayasa Perangkat Lunak (RPL)</p>
+              <span class="edu-loc">Tangerang Selatan, Banten</span>
+            </div>
+          </div>
+
+          <div class="section-content reveal">
+            <div class="prose-block">
+              <p class="prose-lead">
+                Bagi saya, perangkat lunak yang baik bukan hanya soal kode yang berhasil dikompilasi tanpa galat—melainkan
+                sistem yang alurnya jelas bagi pengguna, datanya tertata rapi di balik layar, dan antarmukanya tidak
+                membingungkan.
+              </p>
+              <p>
+                Selama menempuh pendidikan di jurusan <strong>Rekayasa Perangkat Lunak (RPL)</strong> SMKN 6 Kota
+                Tangerang Selatan, saya mempelajari pengembangan aplikasi secara menyeluruh. Di ranah desktop, saya
+                terbiasa membangun sistem berbasis <strong>C# (.NET WinForms)</strong> yang terhubung langsung ke basis
+                data relasional <strong>MySQL</strong>—mulai dari sistem otentikasi operator, pencatatan transaksi,
+                hingga pencetakan struk fisik.
+              </p>
+              <p>
+                Di luar pemrograman desktop dan web (<strong>HTML, CSS, JavaScript</strong>), saya juga aktif mendalami
+                perancangan <em>User Flow</em>, penerapan psikologi warna dalam antarmuka, serta pemanfaatan
+                <strong>Generative AI</strong> melalui AWS PartyRock. Di waktu luang, saya mempelajari bahasa Jerman
+                (<em>Deutsch</em>) di samping bahasa Indonesia dan Inggris untuk memperluas akses terhadap referensi
+                teknologi global.
+              </p>
+            </div>
+
+            <div class="principles-grid">
+              <article class="principle-item">
+                <span class="principle-num">01</span>
+                <h3>Struktur Data &amp; Logika Jelas</h3>
+                <p>Memastikan skema tabel, relasi MySQL, dan validasi input dirancang rapi sejak awal agar aplikasi mudah
+                  dirawat.</p>
+              </article>
+              <article class="principle-item">
+                <span class="principle-num">02</span>
+                <h3>Empati pada Alur Pengguna</h3>
+                <p>Merancang alur kerja—baik untuk kasir toko maupun siswa yang membutuhkan ruang konseling aman—agar
+                  minim hambatan.</p>
+              </article>
+              <article class="principle-item">
+                <span class="principle-num">03</span>
+                <h3>Eksplorasi Teknologi Adaptif</h3>
+                <p>Memanfaatkan alat modern seperti Generative AI secara terarah dengan perancangan <em>prompt</em> yang
+                  teruji.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: KEAHLIAN & TEKNOLOGI -->
+    <section id="keahlian" class="section-block section-tinted">
+      <div class="container">
+        <div class="section-head-wide reveal">
+          <div>
+            <span class="section-index">02 / KOMPETENSI TEKNIS</span>
+            <h2 class="section-title">Keahlian &amp; Teknologi yang Digunakan</h2>
+          </div>
+          <p class="section-head-desc">
+            Ringkasan bidang keahlian yang saya pelajari dan terapkan langsung dalam pengerjaan proyek sekolah maupun
+            eksplorasi mandiri.
+          </p>
+        </div>
+
+        <div class="skills-matrix reveal">
+          <article class="skill-quadrant">
+            <div class="skill-top">
+              <span class="meta-mono">BIDANG 01</span>
+              <svg class="skill-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                stroke-width="1.6" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="1.5" />
+                <path d="M8 20h8M12 16v4" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Aplikasi Desktop &amp; Basis Data</h3>
+            <p>
+              Membangun aplikasi operasional berbasis Windows Forms dengan manajemen hak akses pengguna, pengelolaan
+              transaksi CRUD, koneksi MySQL melalui phpMyAdmin, serta dukungan cetak struk termal.
+            </p>
+            <ul class="tag-list">
+              <li>C#</li>
+              <li>.NET WinForms</li>
+              <li>MySQL</li>
+              <li>phpMyAdmin</li>
+              <li>Thermal Receipt</li>
+            </ul>
+          </article>
+
+          <article class="skill-quadrant">
+            <div class="skill-top">
+              <span class="meta-mono">BIDANG 02</span>
+              <svg class="skill-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                stroke-width="1.6" aria-hidden="true">
+                <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Pengembangan Web Frontend</h3>
+            <p>
+              Menyusun struktur dokumen web dengan HTML semantik, tata letak responsif berbasis CSS Grid dan Flexbox,
+              serta interaktivitas komponen antarmuka menggunakan Vanilla JavaScript.
+            </p>
+            <ul class="tag-list">
+              <li>HTML5 Semantik</li>
+              <li>CSS3 &amp; Grid</li>
+              <li>JavaScript</li>
+              <li>Responsive Layout</li>
+            </ul>
+          </article>
+
+          <article class="skill-quadrant">
+            <div class="skill-top">
+              <span class="meta-mono">BIDANG 03</span>
+              <svg class="skill-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                stroke-width="1.6" aria-hidden="true">
+                <circle cx="6" cy="6" r="2.5" />
+                <circle cx="18" cy="6" r="2.5" />
+                <circle cx="12" cy="18" r="2.5" />
+                <path d="M8.2 7.5L15.8 7.5M7.2 8.2L10.8 15.8M16.8 8.2L13.2 15.8" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Arsitektur Sistem &amp; UI/UX Flow</h3>
+            <p>
+              Memetakan kebutuhan sistem menjadi arsitektur halaman dan <em>User Flow</em> yang logis, sekaligus
+              mempertimbangkan aspek psikologi warna dan kenyamanan visual pengguna.
+            </p>
+            <ul class="tag-list">
+              <li>System Design</li>
+              <li>User Flow</li>
+              <li>Web Architecture</li>
+              <li>Color Psychology</li>
+            </ul>
+          </article>
+
+          <article class="skill-quadrant">
+            <div class="skill-top">
+              <span class="meta-mono">BIDANG 04</span>
+              <svg class="skill-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                stroke-width="1.6" aria-hidden="true">
+                <path d="M12 3l1.8 4.8L18.5 9.5l-4.7 1.7L12 16l-1.8-4.8L5.5 9.5l4.7-1.7L12 3z" stroke-linejoin="round" />
+                <path d="M5 18.5h14" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Generative AI &amp; Komunikasi Multibahasa</h3>
+            <p>
+              Merancang alur interaksi AI berbasis <em>prompt engineering</em> untuk menyelesaikan permasalahan spesifik,
+              didukung kemampuan komunikasi lintas bahasa dalam konteks pembelajaran dan dokumentasi.
+            </p>
+            <ul class="tag-list">
+              <li>AWS PartyRock</li>
+              <li>Prompt Engineering</li>
+              <li>Indonesia</li>
+              <li>English</li>
+              <li>Deutsch</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: PROYEK & STUDI KASUS -->
+    <section id="proyek" class="section-block">
+      <div class="container">
+        <div class="section-head-wide reveal">
+          <div>
+            <span class="section-index">03 / KARYA PILIHAN</span>
+            <h2 class="section-title">Proyek &amp; Studi Kasus</h2>
+          </div>
+          <p class="section-head-desc">
+            Penjelasan konteks masalah, solusi teknis, arsitektur sistem, serta teknologi di balik setiap proyek yang
+            saya kerjakan. Klik <strong>Baca Studi Kasus</strong> untuk melihat rincian alur sistem.
+          </p>
+        </div>
+
+        <div class="projects-stack">
+
+          <!-- PROYEK 01: KOPI & ROTI -->
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <div class="visual-frame">
+                <div class="visual-caption">
+                  <span class="meta-mono">PROYEK 01 · DESKTOP POS</span>
+                  <span class="badge-status status-deployed">Selesai / Terpasang</span>
+                </div>
+                <div class="arch-diagram" aria-label="Diagram alur aplikasi kasir Kopi dan Roti">
+                  <div class="arch-node">
+                    <span class="arch-step">01</span>
+                    <div>
+                      <strong>Otentikasi Operator</strong>
+                      <small>Validasi akun kasir sebelum sesi penjualan</small>
+                    </div>
+                  </div>
+                  <div class="arch-connector" aria-hidden="true"></div>
+                  <div class="arch-node">
+                    <span class="arch-step">02</span>
+                    <div>
+                      <strong>Manajemen Transaksi</strong>
+                      <small>Input item menu, kuantitas &amp; kalkulasi otomatis</small>
+                    </div>
+                  </div>
+                  <div class="arch-connector" aria-hidden="true"></div>
+                  <div class="arch-split">
+                    <div class="arch-node compact">
+                      <strong>Database MySQL</strong>
+                      <small>phpMyAdmin · Log Riwayat</small>
+                    </div>
+                    <div class="arch-node compact">
+                      <strong>Struk Termal</strong>
+                      <small>Output Cetak Bukti Bayar</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-category">Aplikasi Desktop &amp; Basis Data</span>
+                <span class="project-role">Peran: Desktop Developer &amp; Database Design</span>
+              </div>
+              <h3 class="project-title">Kopi &amp; Roti — Sistem Kasir Desktop (Point-of-Sale)</h3>
+              <p class="project-summary">
+                Aplikasi kasir desktop berbasis Windows Forms yang dirancang untuk mempercepat pencatatan transaksi
+                penjualan kedai kopi dan roti secara terstruktur, aman, dan terhubung ke database lokal.
+              </p>
+
+              <div class="project-breakdown">
+                <div class="breakdown-row">
+                  <span class="breakdown-label">Latar Masalah</span>
+                  <p>Pencatatan pesanan manual rentan salah hitung, menyulitkan pelacakan riwayat penjualan, serta tidak
+                    memisahkan akses antar-operator kasir.</p>
+                </div>
+                <div class="breakdown-row">
+                  <span class="breakdown-label">Solusi &amp; Fitur</span>
+                  <p>Membangun antarmuka WinForms dengan otentikasi operator khusus, integrasi tabel relasional MySQL
+                    (dikelola via phpMyAdmin) untuk penyimpanan transaksi, dan modul cetak struk termal otomatis.</p>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <ul class="tag-list">
+                  <li>C# .NET</li>
+                  <li>Windows Forms</li>
+                  <li>MySQL</li>
+                  <li>phpMyAdmin</li>
+                </ul>
+                <button type="button" class="btn-case-study" data-project="kopi-roti">
+                  <span>Baca Studi Kasus</span>
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75"
+                    aria-hidden="true">
+                    <path d="M4 10h12m0 0l-4.5-4.5M16 10l-4.5 4.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYEK 02: UPCYCLE MASTER -->
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <div class="visual-frame">
+                <div class="visual-caption">
+                  <span class="meta-mono">PROYEK 02 · GENERATIVE AI</span>
+                  <span class="badge-status status-deployed">Aktif / Diterbitkan</span>
+                </div>
+                <div class="arch-diagram" aria-label="Diagram alur aplikasi Upcycle Master">
+                  <div class="arch-node">
+                    <span class="arch-step">01</span>
+                    <div>
+                      <strong>Input Limbah Rumah Tangga</strong>
+                      <small>Jenis barang bekas, bahan &amp; kondisi material</small>
+                    </div>
+                  </div>
+                  <div class="arch-connector" aria-hidden="true"></div>
+                  <div class="arch-node">
+                    <span class="arch-step">02</span>
+                    <div>
+                      <strong>Prompt Chain AWS PartyRock</strong>
+                      <small>Analisis kelayakan material &amp; keamanan pengolahan</small>
+                    </div>
+                  </div>
+                  <div class="arch-connector" aria-hidden="true"></div>
+                  <div class="arch-node">
+                    <span class="arch-step">03</span>
+                    <div>
+                      <strong>Panduan Daur Ulang Fungsional</strong>
+                      <small>Rekomendasi alat, bahan tambahan &amp; langkah kerja</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-category">Generative AI &amp; Sustainability</span>
+                <span class="project-role">Peran: AI App Builder &amp; Prompt Engineer</span>
+              </div>
+              <h3 class="project-title">Upcycle Master — Asisten Cerdas Daur Ulang Limbah</h3>
+              <p class="project-summary">
+                Platform asisten interaktif berbasis Generative AI di AWS PartyRock yang menganalisis limbah rumah
+                tangga pengguna dan mengubahnya menjadi panduan kreasi daur ulang yang fungsional.
+              </p>
+
+              <div class="project-breakdown">
+                <div class="breakdown-row">
+                  <span class="breakdown-label">Latar Masalah</span>
+                  <p>Banyak sampah rumah tangga seperti botol, kardus, dan kemasan plastik langsung dibuang karena
+                    pengguna tidak memiliki referensi ide pengolahan yang praktis.</p>
+                </div>
+                <div class="breakdown-row">
+                  <span class="breakdown-label">Solusi &amp; Fitur</span>
+                  <p>Merancang alur widget dan <em>prompt</em> terstruktur agar AI mampu mengidentifikasi karakteristik
+                    limbah lalu menghasilkan instruksi langkah demi langkah yang ramah lingkungan.</p>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <ul class="tag-list">
+                  <li>AWS PartyRock</li>
+                  <li>Generative AI</li>
+                  <li>Prompt Engineering</li>
+                </ul>
+                <button type="button" class="btn-case-study" data-project="upcycle-master">
+                  <span>Baca Studi Kasus</span>
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75"
+                    aria-hidden="true">
+                    <path d="M4 10h12m0 0l-4.5-4.5M16 10l-4.5 4.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYEK 03: SAFE-SPACE COUNSELING -->
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <div class="visual-frame">
+                <div class="visual-caption">
+                  <span class="meta-mono">PROYEK 03 · SYSTEM &amp; UI/UX</span>
+                  <span class="badge-status status-highlight">Konsep Arsitektur Unggulan</span>
+                </div>
+                <div class="arch-diagram" aria-label="Diagram alur arsitektur Safe-Space Student Counseling">
+                  <div class="arch-node">
+                    <span class="arch-step">01</span>
+                    <div>
+                      <strong>Akses Anonim Tanpa Hambatan</strong>
+                      <small>Masuk sesi aman tanpa eksposur identitas siswa</small>
+                    </div>
+                  </div>
+                  <div class="arch-connector" aria-hidden="true"></div>
+                  <div class="arch-node">
+                    <span class="arch-step">02</span>
+                    <div>
+                      <strong>Antarmuka Psikologi Warna</strong>
+                      <small>Palet visual menenangkan untuk menurunkan kecemasan</small>
+                    </div>
+                  </div>
+                  <div class="arch-connector" aria-hidden="true"></div>
+                  <div class="arch-node">
+                    <span class="arch-step">03</span>
+                    <div>
+                      <strong>Alur Sesi Konseling Terstruktur</strong>
+                      <small>Pemetaan ruang diskusi siswa &amp; tindak lanjut aman</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-category">Arsitektur Sistem &amp; Desain UI/UX</span>
+                <span class="project-role">Peran: System Architect &amp; UI/UX Flow Designer</span>
+              </div>
+              <h3 class="project-title">Safe-Space — Arsitektur Web Konseling Siswa Anonim</h3>
+              <p class="project-summary">
+                Perancangan arsitektur sistem dan alur pengguna (<em>User Flow</em>) aplikasi web konseling anonim bagi
+                siswa, menggabungkan keamanan privasi dengan pendekatan psikologi warna untuk meredakan kecemasan.
+              </p>
+
+              <div class="project-breakdown">
+                <div class="breakdown-row">
+                  <span class="breakdown-label">Latar Masalah</span>
+                  <p>Siswa kerap merasa canggung atau khawatir identitasnya terungkap ketika ingin berkonsultasi mengenai
+                    masalah pribadi maupun akademik di lingkungan sekolah.</p>
+                </div>
+                <div class="breakdown-row">
+                  <span class="breakdown-label">Solusi &amp; Fitur</span>
+                  <p>Menyusun arsitektur sistem berorientasi anonimitas dengan <em>User Flow</em> yang ringkas serta
+                    sistem tata warna yang dirancang berdasarkan psikologi warna agar suasana konsultasi terasa aman.</p>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <ul class="tag-list">
+                  <li>System Design</li>
+                  <li>UI/UX User Flow</li>
+                  <li>Web Architecture</li>
+                  <li>Color Psychology</li>
+                </ul>
+                <button type="button" class="btn-case-study" data-project="safe-space">
+                  <span>Baca Studi Kasus</span>
+                  <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75"
+                    aria-hidden="true">
+                    <path d="M4 10h12m0 0l-4.5-4.5M16 10l-4.5 4.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: DI LUAR KODE (PERSONAL CURATIONS) -->
+    <section id="kurasi" class="section-block section-tinted">
+      <div class="container">
+        <div class="section-head-wide reveal">
+          <div>
+            <span class="section-index">04 / DI LUAR KODE</span>
+            <h2 class="section-title">Inspirasi Musik &amp; Motorsport</h2>
+          </div>
+          <p class="section-head-desc">
+            Bagian personal yang membentuk selera visual dan fokus saya saat bekerja—lagu yang sering menemani sesi
+            ngoding dan satu cuplikan motorsport favorit.
+          </p>
+        </div>
+
+        <div class="curation-grid">
+          <!-- MUSIC PLAYER: ABOUT YOU - THE 1975 -->
+          <article class="curation-card reveal">
+            <div class="curation-head">
+              <div>
+                <span class="meta-mono">MUSIK FAVORIT</span>
+                <h3>Pemutar Lagu Saat Ngoding</h3>
+              </div>
+              <span class="media-badge" id="audioStateBadge">Siap Diputar</span>
+            </div>
+
+            <div class="music-player" id="musicPlayerCard">
+              <audio id="favAudio" preload="metadata">
+                <source src="about-you.mp3" type="audio/mpeg" />
+              </audio>
+
+              <div class="music-top">
+                <div class="album-cover">
+                  <img src="about-you-cover.jpg" alt="Sampul album The 1975 — Being Funny in a Foreign Language" />
+                </div>
+
+                <div class="track-details">
+                  <span class="track-album">Being Funny in a Foreign Language</span>
+                  <h4 class="track-name" id="trackTitleText">About You</h4>
+                  <p class="track-artist" id="trackArtistText">The 1975</p>
+
+                  <div class="track-links">
+                    <a href="https://open.spotify.com/track/3EOxyfirIZEngSbUJICGtI" target="_blank" rel="noopener"
+                      class="spotify-link">
+                      <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true">
+                        <path
+                          d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+                      </svg>
+                      <span>Buka di Spotify ↗</span>
+                    </a>
+                  </div>
+                </div>
+
+                <button type="button" class="play-circle-btn" id="audioPlayBtn" aria-label="Putar atau jeda lagu">
+                  <svg id="iconPlay" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                    <polygon points="7,4 20,12 7,20" />
+                  </svg>
+                  <svg id="iconPause" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"
+                    style="display:none;" aria-hidden="true">
+                    <rect x="6" y="4" width="4" height="16" />
+                    <rect x="14" y="4" width="4" height="16" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="scrubber-row">
+                <span class="time-mono" id="audioCurrentTime">0:00</span>
+                <div class="progress-rail" id="audioProgressRail" role="slider" aria-label="Posisi pemutaran audio"
+                  aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                  <div class="progress-fill" id="audioProgressFill"></div>
+                </div>
+                <span class="time-mono" id="audioDuration">5:26</span>
+              </div>
+            </div>
+
+            <div class="curation-foot">
+              <p class="curation-note">
+                Atmosfer monokrom dan aransemen yang tenang membantu menjaga konsentrasi saat merancang antarmuka dan
+                menulis kode.
+              </p>
+              <label class="file-pick-label" title="Pilih file MP3 lain dari perangkat">
+                <span>Ganti File MP3</span>
+                <input type="file" id="audioFilePicker" accept="audio/*" hidden />
+              </label>
+            </div>
+          </article>
+
+          <!-- FAVORITE VIDEO: CHARLES LECLERC SUNSET LAP -->
+          <article class="curation-card reveal">
+            <div class="curation-head">
+              <div>
+                <span class="meta-mono">KLIP FAVORIT · MOTORSPORT</span>
+                <h3>Charles Leclerc — Sunset Lap</h3>
+              </div>
+              <span class="media-badge" id="videoStateBadge">Siap Diputar</span>
+            </div>
+
+            <div class="video-frame">
+              <video id="favVideo" controls preload="metadata" playsinline>
+                <source src="leclerc-sunset-lap.mp4" type="video/mp4" />
+              </video>
+            </div>
+
+            <div class="curation-foot curation-foot-split">
+              <p class="curation-note">
+                Di luar dunia perangkat lunak, saya menyukai Formula 1—terutama bagaimana presisi teknik, manajemen
+                strategi, dan fokus pengemudi bekerja dalam satu kesatuan di setiap putaran.
+              </p>
+              <div class="video-controls-inline">
+                <button type="button" class="btn-small" id="videoPlayBtn">Putar Klip</button>
+                <label class="file-pick-label" title="Pilih file MP4 dari perangkat">
+                  <span>Pilih MP4</span>
+                  <input type="file" id="videoFilePicker" accept="video/*" hidden />
+                </label>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: KONTAK & TAUTAN -->
+    <section id="kontak" class="section-block">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-intro">
+            <span class="section-index">05 / KONTAK &amp; TAUTAN</span>
+            <h2 class="contact-title">
+              Mari terhubung untuk diskusi proyek, <em class="serif-italic">PKL, atau kolaborasi teknis.</em>
+            </h2>
+            <p class="contact-desc">
+              Saya terbuka untuk berdiskusi seputar pengembangan aplikasi desktop, desain alur web, maupun peluang
+              belajar bersama di dunia rekayasa perangkat lunak.
+            </p>
+          </div>
+
+          <div class="contact-links-grid">
+            <a href="https://github.com/ellarygail-studie" target="_blank" rel="noopener" class="contact-link-card">
+              <div>
+                <span class="meta-mono">REPOSITORI KODE</span>
+                <strong>GitHub — ellarygail-studie</strong>
+                <p>Eksplorasi source code &amp; eksperimen pemrograman</p>
+              </div>
+              <span class="link-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a href="https://www.instagram.com/ellarygail_?psln=MTh6cGx5NGtyejZpOQ==" target="_blank" rel="noopener"
+              class="contact-link-card">
+              <div>
+                <span class="meta-mono">MEDIA SOSIAL</span>
+                <strong>Instagram — @ellarygail_</strong>
+                <p>Aktivitas keseharian dan koneksi langsung</p>
+              </div>
+              <span class="link-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <div class="contact-link-card static-card">
+              <div>
+                <span class="meta-mono">DOMISILI &amp; SEKOLAH</span>
+                <strong>Kota Tangerang Selatan, ID</strong>
+                <p>SMKN 6 Kota Tangerang Selatan · Jurusan RPL</p>
+              </div>
+              <span class="morse-pill">. --. .-</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Raditya Ega Dasilva</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-meta">Portofolio Rekayasa Perangkat Lunak — SMKN 6 Kota Tangerang Selatan</span>
+      </div>
+      <div class="footer-right">
+        <a href="#top">Kembali ke atas ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CASE STUDY MODAL DRAWER -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <div>
+          <span class="meta-mono" id="modalCategory">STUDI KASUS PROYEK</span>
+          <h2 class="modal-title" id="modalTitle">Judul Proyek</h2>
+        </div>
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Tutup rincian studi kasus">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"
+            aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Populated dynamically from structured case-study data in script.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
